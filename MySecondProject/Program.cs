@@ -58,5 +58,23 @@
 //
 // Car car = new Car();
 // car.StartCar();
+//L
+
+using MySecondProject.SOLID.L;
+
+// var rect = new Square();
+// rect.Height = 10;
+// rect.Width = 5;
+//
+// Console.WriteLine($"Expected area = 10 * 5 = 50");
+// Console.WriteLine($"Actual area = {rect.Area}");
+
+Shape rectangle = new Rectangle{Width = 4, Height = 5};
+
+Console.WriteLine($"Area of rectangle {rectangle.Area}");
+
+Shape square = new Square{SideLength = 5};
+
+Console.WriteLine($"Area of square {square.Area}");
 
 Console.ReadLine();

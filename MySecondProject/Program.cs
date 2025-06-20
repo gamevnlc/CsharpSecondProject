@@ -3,6 +3,7 @@
 
 using MySecondProject.OopPrinciples.Abstraction;
 using MySecondProject.OopPrinciples.Encapsulation;
+using MySecondProject.OopPrinciples.Inheritance;
 
 // BadBankAccount badAccount = new BadBankAccount();
 // badAccount.balance = 100;
@@ -21,9 +22,26 @@ using MySecondProject.OopPrinciples.Encapsulation;
 // Console.WriteLine($"Balance: {bankAccount.GetBalance()}");
 
 // Abstraction
-EmailService emailService = new EmailService();
+// EmailService emailService = new EmailService();
 // emailService.Connect();
 // emailService.Authenticate();
-emailService.SendEmail();
+// emailService.SendEmail();
 // emailService.Disconnect();
+
+//Inheritance
+
+// Car car = new Car();
+//
+// car.Brand = "Ford";
+// car.Start();
+// car.Stop();
+//
+// // Unique
+// car.NumberOfDoors = 4;
+// car.NumberOfWheels = 4;
+// Bike bike = new Bike();
+// bike.NumberOfWheels = 2;
+// bike.Start();
+// bike.Stop();
+
 Console.ReadLine();

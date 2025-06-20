@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Encapsulation
 
-using MySecondProject.OopPrinciples.Coupling;
+
 
 // BadBankAccount badAccount = new BadBankAccount();
 // badAccount.balance = 100;
@@ -54,6 +54,12 @@ using MySecondProject.OopPrinciples.Coupling;
 
 //Coupling
 // Order order = new Order(new EmailSender());
-Order order = new Order(new SmsSender());
-order.PlaceOrder();
+// Order order = new Order(new SmsSender());
+// order.PlaceOrder();
+//Composition
+using MySecondProject.OopPrinciples.Composition;
+
+Car car = new Car();
+car.StartCar();
+
 Console.ReadLine();

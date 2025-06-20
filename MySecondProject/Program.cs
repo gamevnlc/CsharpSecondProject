@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Encapsulation
 
-using MySecondProject.OopPrinciples.Abstraction;
-using MySecondProject.OopPrinciples.Encapsulation;
-using MySecondProject.OopPrinciples.Inheritance;
+using MySecondProject.OopPrinciples.Coupling;
 
 // BadBankAccount badAccount = new BadBankAccount();
 // badAccount.balance = 100;
@@ -44,4 +42,18 @@ using MySecondProject.OopPrinciples.Inheritance;
 // bike.Start();
 // bike.Stop();
 
+//Polymorphism
+// List<Vehicle> vehicles = new List<Vehicle>();
+// vehicles.Add(new Car {});
+// vehicles.Add(new Motorcycle{});
+//
+// foreach (var vehicle in vehicles)
+// {
+//     vehicle.Start();
+// }
+
+//Coupling
+// Order order = new Order(new EmailSender());
+Order order = new Order(new SmsSender());
+order.PlaceOrder();
 Console.ReadLine();
